@@ -1,19 +1,30 @@
+/* 引入配置字体API */
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+
+h1.post-title {
+  font-family: 'zt.log', cursive;
+}
+
 /*iconfont默认样式*/
 .icon {
-    width: 1em; height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-    }
-  /* 页脚蝴蝶振翅动画 */
-  .copyright svg{
-    animation:butterfly 1s linear infinite alternate;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+/* 页脚蝴蝶振翅动画 */
+.copyright svg {
+  animation: butterfly 1s linear infinite alternate;
+}
+
+@keyframes butterfly {
+  from {
+    transform: rotateY(70deg);
   }
-  @keyframes butterfly {
-    from {
-      transform:rotateY(70deg);
-    }
-    to {
-      transform:rotateY(0deg);
-    }
+
+  to {
+    transform: rotateY(0deg);
   }
+}
