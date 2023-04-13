@@ -1,46 +1,46 @@
 document.addEventListener('DOMContentLoaded', function () {
-  let headerContentWidth, $nav
+  let blogNameWidth, menusWidth, searchWidth, $nav
   let mobileSidebarOpen = false
 
-  const adjustMenu = init => {
-    const getAllWidth = ele => {
-      let width = 0
-      ele.length && Array.from(ele).forEach(i => { width += i.offsetWidth })
-      return width
-    }
+  // const adjustMenu = init => {
+  //   const getAllWidth = ele => {
+  //     let width = 0
+  //     ele.length && Array.from(ele).forEach(i => { width += i.offsetWidth })
+  //     return width
+  //   }
 
-    if (init) {
-      const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
-      const menusWidth = getAllWidth(document.getElementById('menus').children)
-      headerContentWidth = blogInfoWidth + menusWidth
-      $nav = document.getElementById('nav')
-    }
+  //   if (init) {
+  //     const blogInfoWidth = getAllWidth(document.querySelector('#blog-info > a').children)
+  //     const menusWidth = getAllWidth(document.getElementById('menus').children)
+  //     headerContentWidth = blogInfoWidth + menusWidth
+  //     $nav = document.getElementById('nav')
+  //   }
 
-    let hideMenuIndex = ''
-    if (window.innerWidth <= 768) hideMenuIndex = true
-    else hideMenuIndex = headerContentWidth > $nav.offsetWidth - 120
+  //   let hideMenuIndex = ''
+  //   if (window.innerWidth <= 768) hideMenuIndex = true
+  //   else hideMenuIndex = headerContentWidth > $nav.offsetWidth - 120
 
-    if (hideMenuIndex) {
-      $nav.classList.add('hide-menu')
-    } else {
-      $nav.classList.remove('hide-menu')
-    }
-  }
+  //   if (hideMenuIndex) {
+  //     $nav.classList.add('hide-menu')
+  //   } else {
+  //     $nav.classList.remove('hide-menu')
+  //   }
+  // }
 
-  // 初始化header
-  const initAdjust = () => {
-    adjustMenu(true)
-    $nav.classList.add('show')
-  }
+  // // 初始化header
+  // const initAdjust = () => {
+  //   adjustMenu(true)
+  //   $nav.classList.add('show')
+  // }
 
   // sidebar menus
   const sidebarFn = {
     open: () => {
-      btf.sidebarPaddingR()
-      document.body.style.overflow = 'hidden'
-      btf.animateIn(document.getElementById('menu-mask'), 'to_show 0.5s')
-      document.getElementById('sidebar-menus').classList.add('open')
-      mobileSidebarOpen = true
+      // btf.sidebarPaddingR()
+      // document.body.style.overflow = 'hidden'
+      // btf.animateIn(document.getElementById('menu-mask'), 'to_show 0.5s')
+      // document.getElementById('sidebar-menus').classList.add('open')
+      // mobileSidebarOpen = true
     },
     close: () => {
       const $body = document.body
@@ -780,7 +780,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const unRefreshFn = function () {
     window.addEventListener('resize', () => {
-      adjustMenu(false)
+      // adjustMenu(false)
       btf.isHidden(document.getElementById('toggle-menu')) && mobileSidebarOpen && sidebarFn.close()
     })
 
@@ -792,17 +792,18 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   window.refreshFn = function () {
-    initAdjust()
+    // initAdjust()
 
     if (GLOBAL_CONFIG_SITE.isPost) {
       GLOBAL_CONFIG.noticeOutdate !== undefined && addPostOutdateNotice()
       GLOBAL_CONFIG.relativeDate.post && relativeDate(document.querySelectorAll('#post-meta time'))
-    } else {
-      GLOBAL_CONFIG.relativeDate.homepage && relativeDate(document.querySelectorAll('#recent-posts time'))
-      GLOBAL_CONFIG.runtime && addRuntime()
-      addLastPushDate()
-      toggleCardCategory()
-    }
+    } 
+    // else {
+    //   GLOBAL_CONFIG.relativeDate.homepage && relativeDate(document.querySelectorAll('#recent-posts time'))
+    //   GLOBAL_CONFIG.runtime && addRuntime()
+    //   addLastPushDate()
+    //   toggleCardCategory()
+    // }
 
     scrollFnToDo()
     GLOBAL_CONFIG_SITE.isHome && scrollDownInIndex()
