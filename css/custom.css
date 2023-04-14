@@ -83,9 +83,43 @@ h1.post-title {
   color: #6dc731;
 }
 
-[data-theme="dark"] #post-info {
-  color: #6dc731 !important;
+/* 夜间模式配置 */
+[data-theme="dark"] #post-info .post-title {
+  color: #fa0418 !important;
 }
+
+/* 夜间模式配置 */
+[data-theme="dark"] #post-meta {
+  color: #c21f83 !important;
+  font-size: 20px !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] .post-meta-categories {
+  color: #c21f83 !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] #category {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] #tag {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] #archive {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] #page {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+
 
 /* 阅读模式 */
 .read-mode #aside-content .card-widget {

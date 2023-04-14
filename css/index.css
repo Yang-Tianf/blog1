@@ -4395,7 +4395,9 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.5s;
 }
 #page-header.full_page {
-  height: 70vh;
+  height: 60vh;
+  width: 100%;
+  background-position-y: -250px;
   background-attachment: fixed;
 }
 #nav {
