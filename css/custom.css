@@ -143,7 +143,7 @@ h1.post-title {
 }
 
 /*10s为加载动画的时间，1为加载动画的次数，ease-in-out为动画效果*/
-#page-header,
+/* #page-header,
 #web_bg {
     -webkit-animation: imgblur 3s 1 ease-in-out;
     animation: imgblur 10s 1 ease-in-out;
@@ -157,14 +157,14 @@ h1.post-title {
   }
 }
 /*适配使用-webkit内核的浏览器 */
-@-webkit-keyframes imgblur {
+/* @-webkit-keyframes imgblur {
   0% {
     -webkit-filter: blur(5px);
   }
   100% {
     -webkit-filter: blur(0px);
   }
-}
+} */ 
 
 
 /* 全局默认鼠标指针 */
