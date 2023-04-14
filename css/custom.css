@@ -28,3 +28,82 @@ h1.post-title {
     transform: rotateY(0deg);
   }
 }
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+/* 夜间模式： */
+[data-theme="dark"] #aside-content .card-widget {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #39d68d;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] #recent-posts .article-title {
+  color: #20c2dfb4 !important;
+
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] .article-meta-wrap {
+  color: #FFF !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] .article-meta {
+  color: #FFF !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] .article-meta__categories {
+  color: #FFF !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] .recent-post-item {
+  color: #39d68d;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] .article-meta__tags {
+  color: #FFF !important;
+}
+
+/* 夜间模式配置 */
+[data-theme="dark"] div#post {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #6dc731;
+}
+
+[data-theme="dark"] #post-info {
+  color: #6dc731 !important;
+}
+
+/* 阅读模式 */
+.read-mode #aside-content .card-widget {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+
+.read-mode div#post {
+  background: rgba(158, 204, 171, 0.5) !important;
+}
+
+
+/* 夜间模式下的阅读模式 */
+[data-theme="dark"] .read-mode #aside-content .card-widget {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #5231c7;
+}
+
+[data-theme="dark"] .read-mode div#post {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #1b4ae7;
+}
