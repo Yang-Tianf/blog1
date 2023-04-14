@@ -1,7 +1,7 @@
 //随机背景图片数组,图片可以换成图床链接，注意最后一条后面不要有逗号
 var backimg = [
     "url(/img/1p176w.jpg)",
-    "url(/img/d6kpz3.jpg)",
+    "url(/img/x67zko.jpg)",
     "url(/img/vqze58.jpg)",
     "url(/img/yxe5wg.png)"
 ];
@@ -12,7 +12,7 @@ var bgindex = Math.floor(Math.random() * backimg.length);
 //随机banner数组,图片可以换成图床链接，注意最后一条后面不要有逗号
 var bannerimg = [
     "url(/img/1p176w.jpg)",
-    "url(/img/d6kpz3.jpg)",
+    "url(/img/x67zko.jpg)",
     "url(/img/vqze58.jpg)",
     "url(/img/yxe5wg.png)"
 ];
