@@ -4346,6 +4346,80 @@ h1.page-title + .tag-cloud-list {
   width: 100%;
   background: #705634;
 }
+#page-header.nav-fixed #nav {
+  position: fixed;
+  top: -60px;
+  z-index: 91;
+  background: none;
+  -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -o-transition: -o-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+/* transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; */
+}
+#nav {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#nav #blog_name {
+  display: none;
+}
+#nav #menus .menus_items a {
+  color: #00ffd0;
+}
+#nav #menus .menus_items a:hover {
+  color: #f00;
+}
+#nav .site-page:not(.child):after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 0;
+  height: 3px;
+  background-color: #f00;
+  content: '';
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#recent-posts > .recent-post-item {
+  background: rgba(255,255,255,0.9);
+}
+.card-widget {
+  background: rgba(255,255,255,0.9) !important;
+}
+div#post {
+  background: rgba(255,255,255,0.9);
+}
+div#page {
+  background: rgba(255,255,255,0.9);
+}
+div#archive {
+  background: rgba(255,255,255,0.9);
+}
+div#tag {
+  background: rgba(255,255,255,0.9);
+}
+div#category {
+  background: rgba(255,255,255,0.9);
+}
 #article-container {
   word-wrap: break-word;
   overflow-wrap: break-word;
